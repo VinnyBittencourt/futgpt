@@ -36,6 +36,7 @@ h1,h2,h3{
     --main-green: #04E762;
     --dark01-green: #232F29;
     --light01-green: #234836;
+    --light02-green: #03883A;
 
     --main-black: #252526;
     --dark01-black: #1D1D1E;
@@ -224,4 +225,111 @@ header{
 
 .btn-secondary:hover{
     background-color: var(--light01-green);
+}
+
+
+/* ----- Right Col ----- */
+
+.right-col{
+    width: 1058px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.breadcrumbs{
+    background-color: var(--main-black);
+    padding: 1.5rem;
+    border-radius: 6px;
+
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.breadcrumbs p{
+    font-weight: 100;
+}
+
+.current-page{
+    font-weight: 400 !important;
+}
+
+.player-profile{
+    display: flex;
+    padding: 1.25rem 1.5rem;
+    border-radius: 6px;
+    gap: 1rem;
+
+    background: url(./Assets/Background-soccer.png);
+}
+
+.player-profile img{
+    border-radius: 10px;
+}
+
+.player-content{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 4px;
+}
+
+.player-content h5{
+    font-size: 1.75rem;
+    font-weight: 500;
+}
+
+.player-content p{
+    font-size: 1.125rem;
+    font-weight: 200;
+    margin-bottom: 4px;
+}
+
+.player-content span{
+    padding: 0.125rem 0.5rem;
+    background-color: var(--light02-green);
+    font-weight: 200;
+    border-radius: 4px;
+    font-size: 1.125rem;
+}
+
+.player-info{
+    display: flex;
+    background-color: var(--main-black);
+    border-radius: 6px;
+    padding: 1.5rem;
+    align-items: center;
+}
+
+.all-info-player{
+    display: flex;
+}
+
+.team-container{
+    display: flex;
+    border-radius: 6px;
+    background-color: var(--dark01-black);
+    padding: 1rem 1.5rem;
+    gap: 1rem;
+}
+
+.team-player-container{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 0.75rem;
+}
+
+.team-player-container .label{
+    font-size: 0.87rem !important;
+    color: var(--main-gray);
+}
+
+.team-player-container p {
+    font-size: 1.125rem;
+    font-weight: 400;
 }
