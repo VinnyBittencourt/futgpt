@@ -4,6 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+
+  <!-- Adicione as bibliotecas do ApexCharts e do React-ApexCharts -->
+  <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+  <script src="https://cdn.jsdelivr.net/npm/react-apexcharts"></script>
+  <!-- Adicione a biblioteca do React -->
+  <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+
   <title>FutGPT</title>
 </head>
 <body>
@@ -12,6 +20,11 @@
     <div class="header-wrap">
       <a href="#" class="logo"><img src="./Assets/Logo.svg" alt="FutGPT" ></a>
       <div class="right-nav">
+        <div class="menu-toggle" id="mobile-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
         <nav class="nav-header">
           <a href="#">Home</a>
           <a href="#">Análise GPT</a>
@@ -195,7 +208,7 @@
             <div class="graph-card">
               <h6 class="subtitle">Gols</h6>
               <div class="graph-content">
-                <div class="graph">23%</div>
+                <div id="chart"></div>
                 <div class="graph-info">
                   <p>42 acertos</p>
                   <p>46 tentativas</p>
@@ -207,7 +220,9 @@
             <div class="graph-card penalti">
               <h6 class="subtitle">Pênaltis</h6>
               <div class="graph-content">
-                <div class="graph">23%</div>
+
+                <div id="chart2"></div>
+                
                 <div class="graph-info">
                   <p>42 acertos</p>
                   <p>46 tentativas</p>
@@ -219,7 +234,7 @@
             <div class="graph-card">
               <h6 class="subtitle">Duelos</h6>
               <div class="graph-content">
-                <div class="graph">23%</div>
+                <div id="chart3"></div>
                 <div class="graph-info">
                   <p>42 acertos</p>
                   <p>46 tentativas</p>
@@ -326,13 +341,6 @@
     </div>
 
   </section>
-
-  <!-- 
-  <div class="donut-chart">
-    <div class="donut-ring"></div>
-    <div class="donut-center"></div>
-  </div>
-  -->
 
 
 
