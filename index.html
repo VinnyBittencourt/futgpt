@@ -20,9 +20,24 @@
     <div class="header-wrap">
       <a href="#" class="logo"><img src="./Assets/Logo.svg" alt="FutGPT" ></a>
       <div class="right-nav">
+
+        <!-- Mobile menu  -->
+
         <div class="menu-toggle" id="mobile-menu">
           <img src="./Assets/menu_burguer.png" alt="Menu">
         </div>
+        <div id="side-menu" class="side-nav">
+          <h3>Menu</h5>
+          <a href="#"><img src="./Assets/home_icon.svg" alt="">Home</a>
+          <a href="#"><img src="./Assets/analise_icon.svg" alt="">Análise GPT</a>
+          <a href="#"><img src="./Assets/aulas_icon.svg" alt="">Aulas</a>
+          <a href="#"><img src="./Assets/afiliados_icon.svg" alt="">Afiliados</a>
+          <a href="#"><img src="./Assets/cupon_icon.svg" alt="">Cupons</a>
+          <a href="#"><img src="./Assets/perfil02_icon.svg" alt="">Perfil</a>
+          <a href="javascript:void(0)" class="closebtn" onclick="closeMenu()">&times;</a>
+        </div>
+
+        <!-- Desktop menu -->
         <nav class="nav-header">
           <a href="#">Home</a>
           <a href="#">Análise GPT</a>
@@ -35,6 +50,10 @@
           <div class="wallet-content">
             <p class="label">Carteira</p>
             <p class="text">R$ 2.000,00</p>
+          </div>
+          <div class="dropdown-content">
+            <a href="#"><img src="./Assets/perfil_icon.png" alt="">Perfil</a>
+            <a href="#" class="color-red"> <img src="./Assets/log-out_icon.png" alt="">Sair</a>
           </div>
           <img src="./Assets/Chevron-right.svg" alt="" class="wallet-chevron">
         </div>

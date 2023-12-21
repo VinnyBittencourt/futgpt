@@ -305,3 +305,55 @@ var options = {
 var chart3 = new ApexCharts(document.querySelector("#chart3"), options);
 chart3.render();
 
+
+
+
+
+/* ------ Dropdown ----- */
+
+// Get the dropdown button
+var dropbtn = document.querySelector('.wallet-chevron');
+
+// Toggle the display of the dropdown content on click
+dropbtn.onclick = function() {
+  document.querySelector('.dropdown-content').classList.toggle('show');
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.wallet-chevron')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    for (var i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+
+
+
+
+
+/* ------ Burguer Menu Mobile ------ */
+
+// Get the mobile menu 
+var menuMobile = document.querySelector('.menu-toggle');
+
+// Toggle the display of the menu mobile content on click
+menuMobile.onclick = function() {
+  document.querySelector('.side-nav').classList.add('flex');
+}
+
+
+function closeMenu() {
+    var menu = document.getElementById("side-menu");
+    if (menu.classList.contains('flex')) {
+        // If it does, remove the 'flex' class
+        menu.classList.remove('flex');
+    }
+
+  }
+
+
